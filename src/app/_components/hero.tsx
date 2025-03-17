@@ -1,11 +1,23 @@
 import { Section } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import dogImage from "../../../public/hero-dog.webp";
+import cartImg from "../../../public/cat-hero.png";
 import Image from "next/image";
 
 export function Hero() {
   return (
     <section className="bg-[#e84c3d] text-white relative overflow-hidden">
+        <div>
+            <Image 
+            src={dogImage}
+            alt="Foto do Dog"
+            fill
+            sizes="100vw"
+            priority
+            className="object-container opacity-60 lg:hidden"
+            />
+            <div className="absolute inset-0 bg-black opacity-40 md:hidden"></div>
+        </div>
       <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           <div className="space-y-6">
@@ -27,9 +39,19 @@ export function Hero() {
 
             <div className="mt-8">
               <p className="text-sm mb-4">
-                <b className="bg-black text-white px-2 py-1 rounded-md">5%</b>de
+                <b className="bg-black text-white px-2 py-1 rounded-md mr-2">5%</b>de
                 desconto na primeira compra.
               </p>
+              <div className="flex mt-4">
+                <div className="w-32 hidden lg:block">
+                    <Image 
+                    src={cartImg}
+                    alt="Foto do cart"
+                   quality={100}
+                   className="object-contain"
+                    / >
+                </div>
+              </div>
             </div>
           </div>
           <div className="hidden md:block h-full relative">
