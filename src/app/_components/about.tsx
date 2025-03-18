@@ -10,9 +10,9 @@ export const About = () => {
     <section className="bg-[#fdf6ec] py-16">
       <div className="container px-4 mx-auto">
 
-        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" >
 
-        <div className="relative">
+        <div className="relative" data-aos="fade-up-right">
           <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
             <Image
               src={aboutImage1}
@@ -24,7 +24,7 @@ export const About = () => {
             />
           </div>
 
-          <div className="absolute w-40 h-40 right-4 -bottom-8 rounded-lg border-4 border-white">
+          <div className="absolute w-40 h-40 right-4 -bottom-8 rounded-lg border-4 border-white" >
             <Image
               src={aboutImage2}
               alt="Foto do cachorro"
@@ -36,7 +36,7 @@ export const About = () => {
         </div>
 
 
-        <div className="space-y-6 mt-10">
+        <div className="space-y-6 mt-10" data-aos="fade-up-left">
           <h2 className="text-4xl font-bold ">SOBRE</h2>
           <p>
             Unti1 one has Ioved an animal, a part Of one's soul remains
